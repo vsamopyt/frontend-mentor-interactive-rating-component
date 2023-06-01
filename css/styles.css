@@ -10,6 +10,8 @@
     --ff-primary:'Overpass', sans-serif;
     --fw-regular: 400;
     --fw-bold: 600;
+    --fs-300: 0.75rem;   /* 12px */
+    --fs-350: 0.8125rem;   /* 13px */
     --fs-400: 0.875rem;   /* 14px */
     --fs-450: 0.9375rem;   /* 15px */
     --fs-500: 1rem;   /* 16px */
@@ -197,4 +199,53 @@ main {
     font-size: var(--fs-450);
     line-height: 1.7;
     color: var(--clr-neutral-200);
+}
+
+@media (max-width:400px) {
+    main {
+        padding: 1.2em;
+        width:340px;
+        height:380px;
+        border-radius: 1rem;
+    }
+            
+    .rating-star {
+        width:44px;
+        height:44px; 
+        margin-bottom: 1.4em;
+    }
+
+    .rating-title {
+        margin: 0.5em 0 0.5em 0;
+        font-size: var(--fs-1000);
+    
+    }
+    .rating-text {
+        font-size: var(--fs-450);
+        line-height: 1.4;
+  
+    }
+
+    .rating-item {
+        width:45px;
+        height:45px;
+        font-size: var(--fs-450);
+        font-weight: var(--fw-bold);
+    }
+    
+    .ratting-button {
+        margin-top: 0.2em;
+        height:47px;
+        font-size: var(--fs-450);
+    }
+
+    .thank-card .conteiner-rating {
+        margin: 2em auto 1.7em auto;
+        width:70%;
+        height:2rem;
+        font-size: var(--fs-450);
+        letter-spacing: 1px;
+        line-height: 2rem;
+        
+    }
 }
