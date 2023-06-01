@@ -1,0 +1,200 @@
+:root {
+    --clr-primary-500: hsl(25, 97%, 53%); /*Orange */
+
+    --clr-neutral-100:hsl(0, 0%, 100%); /* White */
+    --clr-neutral-200: hsl(217, 12%, 63%); /*Light Grey*/
+    --clr-neutral-300: hsl(216, 12%, 16%); /*Medium Grey */
+    --clr-neutral-400: hsl(212, 25%, 12%); /*Dark Blue */
+    --clr-neutral-500: hsl(216, 12%, 8%); /*Very Dark Blue */
+
+    --ff-primary:'Overpass', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 600;
+    --fs-400: 0.875rem;   /* 14px */
+    --fs-450: 0.9375rem;   /* 15px */
+    --fs-500: 1rem;   /* 16px */
+    --fs-550: 1.0625rem;   /* 17px */
+    --fs-600: 1.125rem;   /* 18px */
+    --fs-650: 1.1875rem;   /* 19px */
+    --fs-700: 1.25rem;   /* 20px */
+    --fs-750: 1.3125rem;   /* 21px */
+    --fs-800: 1.375rem;   /* 22px */
+    --fs-850: 1.4375rem;   /* 23px */
+    --fs-900: 1.5rem;   /* 24px */
+    --fs-950: 1.5625rem;   /* 25px */
+    --fs-1000: 1.625rem;   /* 26px */
+    --fs-1050: 1.6875rem;   /* 27px */
+    --fs-1100: 1.75rem;   /* 28px */
+    --fs-1150: 1.8125rem;   /* 29px */
+    --fs-1200: 1.875rem;   /* 30px */
+    --fs-1250: 1.9375rem;   /* 31px */
+    --fs-1300: 2rem;   /* 32px */
+    
+
+}
+
+/* normalize */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin:0;
+    padding:0;
+    font:inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-size: var(--fs-550);
+    min-height:100vh;
+    font-family: var(--ff-primary);
+
+}
+
+/* general */
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-neutral-500);
+}
+
+main {
+    padding: 1.8em;
+    width:410px;
+    height:410px;
+    /* border: 1px solid #000; */
+    border-radius: 2rem;
+    background-color: var(--clr-neutral-400); 
+
+}
+.rating-card {
+    display:block;
+}
+
+.rating-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:49px;
+    height:49px;
+    border-radius: 50%;
+    background-color: var(--clr-neutral-300);
+    
+}
+.rating-title {
+    margin: 1em 0 0.5em 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-1100);
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-100);
+
+}
+
+.rating-text {
+    line-height: 1.4;
+    color: var(--clr-neutral-200);
+}
+
+.rating-list {
+    margin:1.8em 0 1.5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+
+}
+
+.rating-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin:1.6em 0 1.5em 0; */
+    width:52px;
+    height:52px;
+    color: var(--clr-neutral-200);
+    font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+    border-radius: 50%;
+    background-color: var(--clr-neutral-300);
+    cursor: pointer;
+
+}
+
+.rating-item:hover {
+    background-color: var(--clr-primary-500);
+    color: var(--clr-neutral-100);
+}
+
+.rating-item.grey {
+    background-color: var(--clr-neutral-200);
+    color: var(--clr-neutral-100);
+}
+
+.ratting-button {
+    margin: 0.1em auto 1em auto;
+    margin-inline: auto;
+    width:100%;
+    height:49px;
+    font-size: var(--fs-500);
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-100);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    background-color: var(--clr-primary-500);
+    border: 1px solid var(--clr-primary-500);
+    cursor: pointer;
+}
+
+.ratting-button:hover {
+    color: var(--clr-primary-500);
+    background-color: var(--clr-neutral-100); 
+    border: 1px solid var(--clr-neutral-100); 
+}
+
+/*  thank card */
+
+.thank-card {
+    display: none;
+    text-align: center;
+    color: var(--clr-neutral-100);
+}
+.thank-image {
+    display: block;
+    margin: 0.8em auto 0.8em auto;
+
+}
+.thank-card .conteiner-rating {
+    margin: 2em auto 2em auto;
+    width:60%;
+    height:2rem;
+    font-size: var(--fs-400);
+    letter-spacing: 1.5px;
+    color:var(--clr-primary-500);
+    text-align: center;
+    vertical-align: center;
+    line-height: 2rem;
+    background-color: var(--clr-neutral-300);
+    border-radius: 16px; 
+}
+
+.thank-title {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-1050);
+    font-weight: var(--fw-bold);
+}
+
+.thank-text {
+    margin: 1em auto 1em auto;
+    padding-inline:0.3em;
+    font-size: var(--fs-450);
+    line-height: 1.7;
+    color: var(--clr-neutral-200);
+}
